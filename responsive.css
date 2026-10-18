@@ -1,0 +1,270 @@
+/* ==========================================================================
+   RESPONSIVE.CSS - ĐẢM BẢO HOÀN HẢO TRÊN MỌI THIẾT BỊ
+   Mobile: 320px - 576px
+   Tablet: 577px - 991px
+   Desktop: 992px trở lên
+   ========================================================================== */
+
+/* 1. MÀN HÌNH MÁY TÍNH LỚN & VỪA (>= 992px) */
+@media (min-width: 992px) {
+  .navbar-nav {
+    gap: 6px;
+  }
+}
+
+/* 2. MÀN HÌNH MÁY TÍNH BẢNG (TABLET: 768px - 991px) */
+@media (max-width: 991.98px) {
+  section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 120px 0 70px 0;
+    text-align: center;
+  }
+
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-stats-row {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .hero-book-wrapper {
+    margin-top: 40px;
+  }
+
+  .book-card-3d {
+    max-width: 300px;
+  }
+
+  .floating-pill.pill-sales {
+    left: 0;
+    top: 5%;
+  }
+
+  .floating-pill.pill-rating {
+    right: 0;
+    bottom: 5%;
+  }
+
+  /* Author Section */
+  .author-content {
+    margin-top: 30px;
+    padding-left: 0;
+  }
+
+  .author-img-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* Pricing popular card */
+  .pricing-card.popular {
+    transform: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .pricing-card.popular:hover {
+    transform: translateY(-8px);
+  }
+
+  /* Navbar collapse menu */
+  .navbar-collapse {
+    background: rgba(15, 23, 42, 0.98);
+    padding: 20px;
+    border-radius: var(--radius-md);
+    margin-top: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-cta-btn {
+    margin-left: 0;
+    margin-top: 12px;
+    display: inline-block;
+  }
+
+  /* Download mockup */
+  .download-img-wrapper {
+    margin-top: 35px;
+  }
+}
+
+/* 3. MÀN HÌNH ĐIỆN THOẠI DI ĐỘNG (MOBILE: 320px - 576px) */
+@media (max-width: 576px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  section {
+    padding: 55px 0;
+  }
+
+  .section-header {
+    margin-bottom: 35px;
+  }
+
+  .section-title {
+    font-size: 1.65rem;
+    line-height: 1.25;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  /* Hero Section Mobile */
+  .hero-section {
+    padding: 100px 0 50px 0;
+  }
+
+  .hero-badge {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .hero-desc {
+    font-size: 0.92rem;
+    margin-bottom: 24px;
+  }
+
+  /* Hero Action Buttons */
+  .hero-action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .hero-action-buttons .btn {
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  .hero-stats-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-top: 20px;
+    margin-top: 25px;
+  }
+
+  .hero-stat-item {
+    width: 100%;
+  }
+
+  /* Floating Badges on Mobile */
+  .floating-pill {
+    position: static;
+    margin: 10px auto;
+    width: fit-content;
+    animation: none;
+    transform: none !important;
+  }
+
+  .book-card-3d {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  /* Author Section Mobile */
+  .author-card {
+    padding: 24px 18px;
+  }
+
+  .author-name {
+    font-size: 1.7rem;
+  }
+
+  .author-highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Features Section Mobile */
+  .feature-card {
+    padding: 24px 20px;
+  }
+
+  .chapters-card {
+    padding: 20px 16px;
+  }
+
+  /* Pricing Cards Mobile */
+  .pricing-card {
+    padding: 30px 20px;
+  }
+
+  .plan-name {
+    font-size: 1.25rem;
+  }
+
+  .price-currency {
+    font-size: 1.6rem;
+  }
+
+  /* Download Section Mobile */
+  .download-card {
+    padding: 24px 18px;
+  }
+
+  .download-form {
+    padding: 18px 14px;
+  }
+
+  /* Reader's Say Mobile */
+  .review-card {
+    padding: 24px 18px;
+  }
+
+  /* Footer Mobile */
+  .site-footer {
+    padding: 50px 0 20px 0;
+    text-align: left;
+  }
+
+  .footer-heading {
+    margin-top: 20px;
+  }
+
+  /* Back to Top Mobile */
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+
+  /* Toast Notification */
+  .custom-toast {
+    top: 15px;
+    right: 15px;
+    left: 15px;
+    width: auto;
+  }
+}
+
+/* Ngăn ngừa thanh cuộn ngang tuyệt đối */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
